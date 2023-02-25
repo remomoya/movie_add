@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="jquery.qrcode.js"></script>
 		<script src="qrcode.js"></script>
@@ -24,15 +25,23 @@
 	</head>
 	<body>
 		<header>
-			<h1 id="title">QR code generator</h1>
+			<h1  class="title" style="display: block;
+	    font-size: 2em;
+	    margin-block-start: 0.67em;
+	    margin-block-end: 0.67em;
+	    margin-inline-start: 0px;
+	    margin-inline-end: 0px;
+	    font-weight: bold;background-color:#98fb98;width:700px"><font color="#008000">QR code</font> generator</h1>
 		</header>
 		<div id="wrap">
 			<h3>generating QR codes</h3>
 			<form>
-				<input type="text" id="text">
-				<input type="button" value="send" id="send">
+				<input type="text" id="text" style="width: 400px; height: 30px; padding: 0.3em 1em; border: solid 2px #67c5ff; border-radius: 3px; transition: .4s;">
+				<input type="button" value="send" id="send" style="height: 40px; display: inline-block; padding: 0.3em 1em; background-color: #67c5ff; color: black;    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;">
 			</form>
-			<div id="qrcode"></div>
+			<div id="qrcode" style="padding:20px"></div>
 		</div>
 	</body>
 
